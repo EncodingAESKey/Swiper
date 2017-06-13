@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Swiper demo</title>
+    <meta name="viewport" content="width=640, use-scalable=no">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="http://www.swiper.com.cn/dist/css/swiper.min.css">
+	<link rel="stylesheet" href="http://www.swiper.com.cn/dist/css/animate.min.css">
+    <!-- Demo styles -->
+    <style>
+    html, body {
+        position: relative;
+        height: 100%;
+    }
+    body {
+        background: #eee;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color:#000;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    /*第一页开始*/
+    .pageIndex{
+    	background: #fff;
+    	position: relative;
+    }
+    .index-bg,.index-text{
+    	position: absolute;
+    	top:50%;
+    	left:50%;
+    }
+    .index-bg{
+    	transform: translate(-50%,-30%);
+    }
+    .index-text{
+    	transform: translate(-50%,-50%);
+    }
+    .index-arrow{
+    	position: absolute;
+    	bottom:5%;
+    	left:50%;
+    	z-index: 5;
+    	margin-left:-22px;
+    }
+    .index-bottom0{
+    	position:absolute;
+    	left:100%;
+    	bottom:0;
+    }
+	.index-bottom1{
+    	position:absolute;
+    	left:0%;
+    	bottom:0;
+    }
+    /*第二页开始*/
+    .pageSecond{
+    	background: #fe657a;
+    	position: relative;
+    }
+    .second-boy{
+    	position: absolute;
+    	bottom:20%;
+    	left:10%;
+    }
+    .second-fontTop{
+    	position:absolute;
+    	left:2%;
+    	top:2%;
+    }
+    .second-fontBottom0{
+    	position: absolute;
+    	left:76%;
+    	bottom:28%;
+    }
+    .second-fontBottom1{
+    	position: absolute;
+    	left:76%;
+    	bottom:16%;
+    }
+    .second-fontBottom2{
+    	position: absolute;
+    	left:76%;
+    	bottom:5%;
+    }
+    .second-arrow{
+    	position: absolute;
+    	bottom:-2%;
+    	left:50%;
+    	z-index: 5;
+    	margin-left:-22px;
+    }
+    </style>
+</head>
+<body>
+    <!-- Swiper -->
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide pageIndex">
+            	<img src="images/indexSnacky.jpg" class="index-bg ani" swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s"/>
+            	<!--content-->
+            	<img src="images/indexTxtCnLife.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.3s"/>
+            	<img src="images/indexTxtCnNestle.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.8s"/>
+            	<img src="images/indexTxtLife.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.3s"/>
+            	<img src="images/indexTxtMoreTo.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="1.8s"/>
+            	<img src="images/indexTxtNestle.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.3s"/>
+            	<img src="images/indexTxtThereis.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="2.8s"/>
+            	<img src="images/indexTxt.png" class="index-text ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="3.3s"/>
+            	<!--向上移动的小三角-->
+            	<img src="images/arrow-up-blue.png" class="index-arrow ani infinite" swiper-animate-effect="fadeOutUp" swiper-animate-duration="2s" swiper-animate-delay="3.8s"/>
+            	<!--bottom-->
+            	<img src="images/indexHouse.jpg" class="index-bottom0 ani infinite" swiper-animate-effect="slideInLeft" swiper-animate-duration="2s" swiper-animate-delay="1s"/>
+        		<img src="images/indexHouse0.jpg" class="index-bottom1 ani infinite" swiper-animate-effect="slideInLeft" swiper-animate-duration="2s" swiper-animate-delay="1s"/>
+            </div>
+            
+            <div class="swiper-slide pageSecond">
+            	<img src="images/boy.gif" class="second-boy ani" swiper-animate-effect="slideInDown" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"/>
+            	
+            	<img src="images/selerTxtLeft01.png" class="second-fontTop ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0.5s"/>
+            	<img src="images/selerTxtLeft02.png" class="second-fontTop ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.2s" swiper-animate-delay="0.5s"/>
+            	<img src="images/selerTxtLeft03.png" class="second-fontTop ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s"/>
+            	<img src="images/selerTxtLeft04.png" class="second-fontTop ani" swiper-animate-effect="bounceInLeft" swiper-animate-duration="1.8s" swiper-animate-delay="0.5s"/>
+            	
+            	<img src="images/selerTxtRightMe.png" class="second-fontBottom0 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="0.5s" swiper-animate-delay="0.5s"/>
+            	<img src="images/selerTxtRightTitle.png" class="second-fontBottom1 ani" swiper-animate-effect="zoomIn" swiper-animate-duration="1s" swiper-animate-delay="0.5s"/>
+            	<img src="images/selerTxtRight.png" class="second-fontBottom2 ani" swiper-animate-effect="bounceInRight" swiper-animate-duration="1.5s" swiper-animate-delay="0.5s"/>
+            	<!--向上移动的小三角-->
+            	<img src="images/arrow-up.png" class="second-arrow ani infinite" swiper-animate-effect="fadeOutUp" swiper-animate-duration="2s" swiper-animate-delay="0s"/>
+            </div>
+        </div>
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="http://www.swiper.com.cn/dist/js/swiper.min.js"></script>
+	<script src="http://zeptojs.com/zepto.min.js"></script><!--解决300ms延迟的额问题-->	
+	<script src="http://www.swiper.com.cn/dist/js/swiper.animate.min.js"></script>	
+    <!-- Initialize Swiper -->
+    <script>
+	function Page(){
+		
+	}
+    $.extend(Page.prototype,{
+    	init:function(){
+    		this.makeSwiper();
+    	},
+    	makeSwiper:function(){
+    		 new Swiper ('.swiper-container', {
+				  onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+				  
+				    swiperAnimateCache(swiper); //隐藏动画元素 
+				    swiperAnimate(swiper); //初始化完成开始动画
+				  }, 
+				  onSlideChangeEnd: function(swiper){ 
+				  	
+				    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+				  },
+				  direction: 'vertical'
+			  })       
+    	}
+    })
+    var page=new Page();
+    page.init()
+    </script>
+</body>
+</html>
